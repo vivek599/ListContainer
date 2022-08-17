@@ -16,6 +16,9 @@ int main()
 
 		L.RemoveElement(522);
 
+		L[0] = -1;
+		L[2] = -11;
+
 		int Length = L.GetLength();
 
 		for (size_t i = 0; i < Length; i++)

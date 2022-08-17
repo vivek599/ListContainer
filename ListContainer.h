@@ -100,6 +100,23 @@ public:
 		return Length;
 	}
 
+	T& operator[](int Index)
+	{
+		if (Index < GetLength())
+		{
+			int Cntr = 0;
 
+			Node* Temp = m_Root;
+
+			while (Cntr != Index)
+			{
+				Cntr++;
+				Temp = Temp->Next;
+			}
+
+			return Temp->Value;
+		}
+
+	}
 };
 
